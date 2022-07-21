@@ -5,9 +5,20 @@ const taskLists = require('markdown-it-task-lists')
 const footnote = require('markdown-it-footnote')
 
 export default defineUserConfig({
-  lang: 'zh-CN',
-  title: '你好， VuePress ！',
-  description: '这是我的第一个 VuePress 站点',
+  locales: {
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    '/': {
+      lang: 'en-US',
+      title: 'Review',
+      description: 'Full Stack Development Review'
+    },
+    '/zh/': {
+      lang: 'zh-CN',
+      title: 'Review',
+      description: '全栈开发回顾'
+    }
+  },
   markdown: {
     linkify: true
   },
