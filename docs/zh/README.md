@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/hero.png
+heroImage: /images/strip-show.gif
 actionText: 快速上手 →
 actionLink: /zh/`guide/
 features:
@@ -13,23 +13,8 @@ features:
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-![VuePress Logo](/images/hero.png)
+123
+123
+123
+123
 
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
-
-[^1]: This is the first footnote.
-[^bignote]: Here's one with multiple paragraphs and code.
-
-    Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
-
-    www.baidu.com
-
-
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
