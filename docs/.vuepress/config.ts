@@ -5,6 +5,7 @@ import { searchPlugin } from '@vuepress/plugin-search'
 import { palettePlugin } from '@vuepress/plugin-palette'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 const taskLists = require('markdown-it-task-lists')
 const footnote = require('markdown-it-footnote')
@@ -189,6 +190,11 @@ export default defineUserConfig({
     palettePlugin({ preset: 'sass' }),
 
     // only enable shiki plugin in production mode
-    isProd ? shikiPlugin({ theme: 'dark-plus' }) : []
+    isProd ? shikiPlugin({ theme: 'dark-plus' }) : [],
+
+    googleAnalyticsPlugin({
+      // we have multiple deployments, which would use different id
+      id: process.env.DOCS_GA_ID ?? ''
+    })
   ]
 })

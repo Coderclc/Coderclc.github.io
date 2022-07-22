@@ -11,6 +11,10 @@ jobs:
   docs:
     runs-on: ubuntu-latest
 
+    env:
+      DOCS_GA_ID: G-CTB8FQ7VMW
+      NODE_VERSION: '16'
+
     steps:
       - uses: actions/checkout@v2
         with:

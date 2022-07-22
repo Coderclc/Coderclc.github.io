@@ -1,35 +1,3 @@
 # HTML
 
-html 123
-
-```ts
-@vuepress
-const { prismjsPlugin } = require('@vuepress')
-
-module.exports = {
-  plugins: [
-    prismjsPlugin({
-      // 配置项
-    })
-  ]
-}
-```
-
-<NpmBadge package="vue" />
-
-<Foo />
-
-```scss
-:root {
-  --search-bg-color: #ffffff;
-  --search-accent-color: #3eaf7c;
-  --search-text-color: #2c3e50;
-  --search-border-color: #eaecef;
-
-  --search-item-text-color: #5d81a5;
-  --search-item-focus-bg-color: #f3f4f5;
-
-  --search-input-width: 8rem;
-  --search-result-width: 20rem;
-}
-```
+- [<!DOCTYPE>](https://developer.mozilla.org/en-US/docs/Glossary/Doctype) In HTML, the declaration of the document type doctype is necessary. In the head of all documents, you will see his figure. The purpose of this declaration is to prevent the browser from switching to a rendering mode we call "weird mode (compatibility mode)" when rendering the document. Make sure that the browser renders according to the best relevant specification, rather than using a rendering mode that does not conform to the specification.
