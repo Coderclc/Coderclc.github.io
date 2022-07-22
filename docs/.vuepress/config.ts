@@ -1,21 +1,20 @@
-import { defineUserConfig } from 'vuepress'
+import { defineUserConfig, defaultTheme } from 'vuepress'
 
 const taskLists = require('markdown-it-task-lists')
 
 const footnote = require('markdown-it-footnote')
 
 export default defineUserConfig({
+  head: [['link', { rel: 'icon', href: '/images/favicon.ico' }]],
   locales: {
-    // 键名是该语言所属的子路径
-    // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'en-US',
-      title: 'Review',
+      title: 'Full Stack',
       description: 'Full Stack Development Review'
     },
     '/zh/': {
-      lang: 'zh-CN',
-      title: 'Review',
+      lang: '简体中文',
+      title: '全栈',
       description: '全栈开发回顾'
     }
   },
