@@ -1,25 +1,3 @@
-# HTML
-
-html 123
-
-```ts
-@vuepress
-const { prismjsPlugin } = require('@vuepress')
-
-module.exports = {
-  plugins: [
-    prismjsPlugin({
-      // 配置项
-    })
-  ]
-}
-```
-
-<NpmBadge package="vue" />
-
-<Foo />
-
-```scss
 :root {
   --search-bg-color: #ffffff;
   --search-accent-color: #3eaf7c;
@@ -32,4 +10,3 @@ module.exports = {
   --search-input-width: 8rem;
   --search-result-width: 20rem;
 }
-```
