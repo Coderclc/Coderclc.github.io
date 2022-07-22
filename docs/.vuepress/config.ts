@@ -34,6 +34,8 @@ export default defineUserConfig({
     logo: '/images/hero.png',
     repo: 'Coderclc/coderclc.github.io',
     docsDir: 'docs',
+    docsBranch: 'master',
+    editLinkPattern: ':repo/edit/:branch/:path',
 
     // theme-level locales config
     locales: {
