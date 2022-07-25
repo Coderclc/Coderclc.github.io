@@ -6,11 +6,11 @@ export const navbarEn: NavbarConfig = [
     children: [
       {
         text: 'Front End',
-        children: ['/front-end/html.md']
+        children: ['/frontend/html.md','/frontend/css.md']
       },
       {
         text: 'Back End',
-        children: ['/back-end/mysql.md']
+        children: ['/backend/mysql.md']
       }
     ]
   }
