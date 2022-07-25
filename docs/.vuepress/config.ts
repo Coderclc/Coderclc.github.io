@@ -2,7 +2,6 @@ import { defineUserConfig, defaultTheme } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { head, navbarEn, navbarZh, sidebarEn, sidebarZh } from './configs'
 import { searchPlugin } from '@vuepress/plugin-search'
-import { palettePlugin } from '@vuepress/plugin-palette'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
@@ -185,9 +184,6 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components')
     }),
-
-    // palette
-    palettePlugin({ preset: 'sass' }),
 
     // only enable shiki plugin in production mode
     isProd ? shikiPlugin({ theme: 'dark-plus' }) : [],

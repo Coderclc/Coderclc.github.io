@@ -4,11 +4,15 @@
 
 ### element
 
-<Element />
+<ClientOnly>
+ <Element />
+</ClientOnly>
 
 ### background-clip
 
-<BackgroundClip />
+<ClientOnly>
+ <BackgroundClip />
+</ClientOnly>
 
 ## Review
 

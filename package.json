@@ -19,11 +19,10 @@
   },
   "homepage": "https://github.com/Coderclc/Coderclc.github.io#readme",
   "dependencies": {
-    "@vuepress/client": "^2.0.0-beta.49",
+    "@vuepress/client": "2.0.0-beta.45",
     "@vuepress/core": "^1.9.7",
     "@vuepress/plugin-docsearch": "^2.0.0-beta.49",
     "@vuepress/plugin-google-analytics": "^2.0.0-beta.49",
-    "@vuepress/plugin-palette": "^2.0.0-beta.49",
     "@vuepress/plugin-register-components": "^2.0.0-beta.49",
     "@vuepress/plugin-search": "^2.0.0-beta.49",
     "@vuepress/plugin-shiki": "^2.0.0-beta.49",
@@ -31,9 +30,9 @@
     "cz-conventional-changelog": "3.3.0",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-task-lists": "^2.1.1",
+    "serve": "^14.0.1",
     "vue": "^3.2.37",
-    "vuepress": "^2.0.0-beta.49",
-    "serve": "^14.0.1"
+    "vuepress": "^2.0.0-beta.49"
   },
   "config": {
     "commitizen": {

@@ -1,11 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@vuepress/client': ^2.0.0-beta.49
+  '@vuepress/client': 2.0.0-beta.45
   '@vuepress/core': ^1.9.7
   '@vuepress/plugin-docsearch': ^2.0.0-beta.49
   '@vuepress/plugin-google-analytics': ^2.0.0-beta.49
-  '@vuepress/plugin-palette': ^2.0.0-beta.49
   '@vuepress/plugin-register-components': ^2.0.0-beta.49
   '@vuepress/plugin-search': ^2.0.0-beta.49
   '@vuepress/plugin-shiki': ^2.0.0-beta.49
@@ -18,11 +17,10 @@ specifiers:
   vuepress: ^2.0.0-beta.49
 
 dependencies:
-  '@vuepress/client': 2.0.0-beta.49
+  '@vuepress/client': 2.0.0-beta.45
   '@vuepress/core': 1.9.7
   '@vuepress/plugin-docsearch': 2.0.0-beta.49
   '@vuepress/plugin-google-analytics': 2.0.0-beta.49
-  '@vuepress/plugin-palette': 2.0.0-beta.49
   '@vuepress/plugin-register-components': 2.0.0-beta.49
   '@vuepress/plugin-search': 2.0.0-beta.49
   '@vuepress/plugin-shiki': 2.0.0-beta.49
@@ -32,7 +30,7 @@ dependencies:
   markdown-it-task-lists: 2.1.1
   serve: 14.0.1
   vue: 3.2.37
-  vuepress: 2.0.0-beta.49_2swkti5cn42xfigpmsn6ifcgpu
+  vuepress: 2.0.0-beta.49_ky4o5iv42nfwog2gkj2rnr6kla
 
 packages:
 
@@ -2155,6 +2153,15 @@ packages:
       - supports-color
     dev: false
 
+  /@vuepress/client/2.0.0-beta.45:
+    resolution: {integrity: sha512-4oK77LI5FpHvF6bZxREfLdWfOgAZroDkyy46moRopasg72UeXjfvOTb/6tIKaNQP6e/Kn2ubRxVeLe7DR5d9Ng==}
+    dependencies:
+      '@vue/devtools-api': 6.2.1
+      '@vuepress/shared': 2.0.0-beta.45
+      vue: 3.2.37
+      vue-router: 4.1.2_vue@3.2.37
+    dev: false
+
   /@vuepress/client/2.0.0-beta.49:
     resolution: {integrity: sha512-zfGlCAF/LwDOrZXZPqADsMgWRuH/2GFOGSOCvt7ZUZHnSrYBdK2FOez/ksWL8EwGNLsRLB8ny1IachMwTew5og==}
     dependencies:
@@ -2572,6 +2579,12 @@ packages:
       upath: 1.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@vuepress/shared/2.0.0-beta.45:
+    resolution: {integrity: sha512-lYj+rgMtQ6liWjvzVy7jGux/Eix5ExbUy8b2uFAAsSE4v5wrdGeVgcFunVb40VPK3Mu0uyW4AvhCsPteLRUp1A==}
+    dependencies:
+      '@vue/shared': 3.2.37
     dev: false
 
   /@vuepress/shared/2.0.0-beta.49:
@@ -10753,7 +10766,7 @@ packages:
       smoothscroll-polyfill: 0.4.4
     dev: false
 
-  /vuepress-vite/2.0.0-beta.49_2swkti5cn42xfigpmsn6ifcgpu:
+  /vuepress-vite/2.0.0-beta.49_ky4o5iv42nfwog2gkj2rnr6kla:
     resolution: {integrity: sha512-iA0pBpjlonksEUbpyEKcTQH0r64mqWj+gHhFAur0/xzjsR8MYxU20b6gpEacDxyKLJr/zRja+XVPp6NSRnCCUg==}
     hasBin: true
     peerDependencies:
@@ -10762,7 +10775,7 @@ packages:
     dependencies:
       '@vuepress/bundler-vite': 2.0.0-beta.49
       '@vuepress/cli': 2.0.0-beta.49
-      '@vuepress/client': 2.0.0-beta.49
+      '@vuepress/client': 2.0.0-beta.45
       '@vuepress/core': 2.0.0-beta.49
       '@vuepress/theme-default': 2.0.0-beta.49
       vue: 3.2.37
@@ -10775,11 +10788,11 @@ packages:
       - supports-color
     dev: false
 
-  /vuepress/2.0.0-beta.49_2swkti5cn42xfigpmsn6ifcgpu:
+  /vuepress/2.0.0-beta.49_ky4o5iv42nfwog2gkj2rnr6kla:
     resolution: {integrity: sha512-dxbgCNn+S9DDUu4Ao/QqwfdQF3e6IgpKhqQxYPPO/xVYZbnQnmXbzh0uGdtKUAyKKgP8UouWbp4Qdk1/Z6ay9Q==}
     hasBin: true
     dependencies:
-      vuepress-vite: 2.0.0-beta.49_2swkti5cn42xfigpmsn6ifcgpu
+      vuepress-vite: 2.0.0-beta.49_ky4o5iv42nfwog2gkj2rnr6kla
     transitivePeerDependencies:
       - '@vue/composition-api'
       - '@vuepress/client'
