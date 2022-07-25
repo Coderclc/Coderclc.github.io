@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "docs:clean": "rimraf .vuepress/.temp .vuepress/.cache .vuepress/dist",
-    "docs:serve": "serve .vuepress/dist",
+    "docs:serve": "serve docs/.vuepress/dist",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
