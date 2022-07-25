@@ -1,6 +1,6 @@
-import type { HeadConfig } from '@vuepress/core'
+// import type { HeadConfig } from '@vuepress/core'
 
-export const head: HeadConfig[] = [
+export const head = [
   [
     'link',
     {
