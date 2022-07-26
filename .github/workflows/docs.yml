@@ -16,15 +16,14 @@ jobs:
       NODE_VERSION: '16'
 
     steps:
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 6.0.2
-
-    steps:
       - uses: actions/checkout@v2
         with:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
+
+     - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 6.0.2
 
       - name: Setup Node.js
         uses: actions/setup-node@v1

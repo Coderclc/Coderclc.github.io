@@ -5,7 +5,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:serve": "serve docs/.vuepress/dist",
-    "docs:clean": "rimraf .vuepress/.temp .vuepress/.cache .vuepress/dist node_modules pnpm-lock.yaml yarn.lock"
+    "docs:clean": "rimraf .vuepress/.temp .vuepress/.cache .vuepress/dist node_modules"
   },
   "repository": {
     "type": "git",
