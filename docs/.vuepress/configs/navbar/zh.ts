@@ -11,6 +11,7 @@ export const navbarZh: NavbarConfig = [
           '/zh/frontend/css.md',
           '/zh/frontend/scss.md',
           '/zh/frontend/jsx.md',
+          '/zh/frontend/typescript.md',
           '/zh/frontend/workflow.md',
           '/zh/frontend/vuepress.md'
         ]

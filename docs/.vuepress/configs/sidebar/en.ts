@@ -8,6 +8,7 @@ export const sidebarEn: SidebarConfig = [
       '/frontend/css.md',
       '/frontend/scss.md',
       '/frontend/jsx.md',
+      '/frontend/typescript.md',
       '/frontend/workflow.md',
       '/frontend/vuepress.md'
     ]
