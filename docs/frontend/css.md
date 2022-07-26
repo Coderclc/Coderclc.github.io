@@ -2,13 +2,13 @@
 
 ## Hack
 
-### element
+### Element
 
 <ClientOnly>
  <Element />
 </ClientOnly>
 
-### background-clip
+### Background-clip
 
 <ClientOnly>
  <BackgroundClip />
