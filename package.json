@@ -2,7 +2,7 @@
   "name": "docs",
   "version": "1.0.0",
   "scripts": {
-    "docs:clean": "rimraf .vuepress/.temp .vuepress/.cache .vuepress/dist",
+    "docs:clean": "rimraf .vuepress/.temp .vuepress/.cache .vuepress/dist node_modules",
     "docs:serve": "serve docs/.vuepress/dist",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
