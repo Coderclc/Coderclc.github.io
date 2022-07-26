@@ -1,27 +1,61 @@
 # Github
 
-## Github Docs
+## [Github Docs](https://docs.github.com/cn)
 
-[在线文档](https://docs.github.com/cn)
-
-## Github Actions
-
-[在线文档](https://docs.github.com/cn/actions)
+## [Github Actions](https://docs.github.com/cn/actions)
 
 ### Github Pages CNAME 丢失问题
 
 [添加 CNAME 文件到你的存储库中](http://doc.yonyoucloud.com/doc/wiki/project/github-pages-basics/cname-file.html)
 
-## YAML
+### Pnpm: command not found
 
-[基本语法](https://www.runoob.com/w3cnote/yaml-intro.html)
+Github Action 中 Pnpm 需要手动安装 [Setup pnpm](https://github.com/marketplace/actions/setup-pnpm)
 
-`${}` 用法
+### Github Action Workflow Can't work
 
-yml 中自定义一个域名属性：
+```yml
+on:
+  # 每当 push 到 master 分支时触发部署
+  push:
+    branches: [master]
+  # 手动触发部署
+  workflow_dispatch:
+```
 
-`mytest: domainName: https://blog.csdn.net/imHanweihu/article/details/96111227`
+```sh
+git push // × 无法触发workflow
+git push origin master // √ 需指定分支
+```
 
-那么在此配置文件中，就可通过 `${}` 来代替域名了
+### 缓存依赖项以加快工作流程
 
-`url: helpCenter: ${xboot.domainName}/szoa/app/html/getHelpDetailById?helpId=`
+```yml
+# 缓存 node_modules
+name: Cache dependencies
+uses: actions/cache@v2
+id: pnpm-cache
+with:
+  path: |
+    **/node_modules
+  key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+  restore-keys: |
+    ${{ runner.os }}-build-${{ env.cache-name }}-
+    ${{ runner.os }}-build-
+    ${{ runner.os }}-
+```
+
+`restore-keys` 缓存后续步骤用 if 判断依赖是否安装
+
+## [Gitpod](https://www.gitpod.io/)
+
+自动化和现成代码开发环境
+
+```yaml
+ports:
+  - port: 2333
+    onOpen: open-preview
+tasks:
+  - init: yarn
+    command: yarn dev
+```
