@@ -11,7 +11,9 @@ export const navbarEn: NavbarConfig = [
           '/frontend/css.md',
           '/frontend/scss.md',
           '/frontend/jsx.md',
+          '/frontend/javascript.md',
           '/frontend/typescript.md',
+          '/frontend/webpack.md',
           '/frontend/workflow.md',
           '/frontend/vuepress.md'
         ]
@@ -21,9 +23,26 @@ export const navbarEn: NavbarConfig = [
         children: ['/backend/node.md', '/backend/script.md']
       },
       {
+        text: 'Algorithm',
+        children: ['/algorithm/base-element.md', '/algorithm/sort.md']
+      },
+      {
         text: 'O&M',
         children: ['/ops/github.md']
       }
+    ]
+  },
+  {
+    text: 'Articles',
+    children: [
+      '/articles/js-class.md',
+      '/articles/js-this',
+      '/articles/js-promise',
+      '/articles/js-async&&await',
+      '/articles/ts-generics.md',
+      '/articles/ts-interfaces.md',
+      '/articles/node-crawl-vmgirls-photo.md',
+      '/articles/webpack-frontend-automated-imports.md'
     ]
   }
 ]

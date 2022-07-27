@@ -29,11 +29,12 @@ const flag: boolean = true
 ### 枚举类型
 
 ```typescript
+// 0,1,2
 enum Color {
   Red,
   Green,
   Blue
-} // 0,1,2
+}
 ```
 
 ### 数组类型
@@ -773,6 +774,7 @@ declare namespace GreetingLib {
   interface LogOptions {
     verbose?: boolean
   }
+
   interface AlertOptions {
     modal: boolean
     title?: string
@@ -787,6 +789,7 @@ declare namespace GreetingLib.Options {
   interface Log {
     verbose?: boolean
   }
+
   interface Alert {
     modal: boolean
     title?: string
@@ -823,6 +826,7 @@ export declare interface IPerson {
   name: string
   age: number
 }
+
 // same
 export interface IPerson {
   name: string

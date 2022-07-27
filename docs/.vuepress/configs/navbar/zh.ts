@@ -11,7 +11,9 @@ export const navbarZh: NavbarConfig = [
           '/zh/frontend/css.md',
           '/zh/frontend/scss.md',
           '/zh/frontend/jsx.md',
+          '/zh/frontend/javascript.md',
           '/zh/frontend/typescript.md',
+          '/zh/frontend/webpack.md',
           '/zh/frontend/workflow.md',
           '/zh/frontend/vuepress.md'
         ]
@@ -21,9 +23,26 @@ export const navbarZh: NavbarConfig = [
         children: ['/zh/backend/node.md', '/zh/backend/script.md']
       },
       {
+        text: '算法',
+        children: ['/zh/algorithm/base-element.md', '/zh/algorithm/sort.md']
+      },
+      {
         text: '运维',
         children: ['/zh/ops/github.md']
       }
+    ]
+  },
+  {
+    text: '文章',
+    children: [
+      '/zh/articles/js-class.md',
+      '/zh/articles/js-this',
+      '/zh/articles/js-promise',
+      '/zh/articles/js-async&&await',
+      '/zh/articles/ts-generics.md',
+      '/zh/articles/ts-interfaces.md',
+      '/zh/articles/node-crawl-vmgirls-photo.md',
+      '/zh/articles/webpack-frontend-automated-imports.md'
     ]
   }
 ]
