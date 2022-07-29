@@ -14,6 +14,12 @@
  <BackgroundClip />
 </ClientOnly>
 
+### IKun
+
+<ClientOnly>
+ <IKun />
+</ClientOnly>
+
 ## Review
 
 - 选择器＋声明块
