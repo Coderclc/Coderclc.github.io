@@ -25,8 +25,6 @@
 </template>
 
 <script lang="ts" setup>
-  import CharVideo from '../utils/charVideo.ts'
-
   import { ref, unref } from 'vue'
 
   const canvasRef = ref(null)
@@ -46,13 +44,17 @@
     })
   }
 
-  async function onClickPlay() {
-    const blob = await getBlob()
-    new CharVideo({
-      canvasElement: unref(canvasRef)
-    }).playFile(blob)
+  function onClickPlay() {
+    import('../utils/charVideo.ts').then(async module => {
+      const CharVideo = module.default
+      const blob = await getBlob()
+      
+      new CharVideo({
+        canvasElement: unref(canvasRef)
+      }).playFile(blob)
 
-    isPlay.value = true
+      isPlay.value = true
+    })
   }
 </script>
 

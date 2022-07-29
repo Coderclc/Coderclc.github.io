@@ -22,7 +22,11 @@ export const sidebarEn: SidebarConfig = {
     },
     {
       text: 'Algorithm',
-      children: ['/algorithm/base-element.md', '/algorithm/sort.md']
+      children: [
+        '/algorithm/base-element.md',
+        '/algorithm/sort.md',
+        '/algorithm/dynamic-programming.md'
+      ]
     },
     {
       text: 'O&M',

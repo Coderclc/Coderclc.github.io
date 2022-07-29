@@ -24,7 +24,11 @@ export const navbarZh: NavbarConfig = [
       },
       {
         text: '算法',
-        children: ['/zh/algorithm/base-element.md', '/zh/algorithm/sort.md']
+        children: [
+          '/zh/algorithm/base-element.md',
+          '/zh/algorithm/sort.md',
+          '/zh/algorithm/dynamic-programming.md'
+        ]
       },
       {
         text: '运维',
