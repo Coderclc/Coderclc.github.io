@@ -18,7 +18,7 @@ export const sidebarZh: SidebarConfig = {
     },
     {
       text: '后端',
-      children: ['/zh/backend/node.md', '/zh/backend/script.md']
+      children: ['/zh/backend/node.md', '/zh/backend/script.md', '/zh/backend/mysql.md']
     },
     {
       text: '算法',
@@ -45,6 +45,11 @@ export const sidebarZh: SidebarConfig = {
         '/zh/articles/node-crawl-vmgirls-photo.md',
         '/zh/articles/webpack-frontend-automated-imports.md'
       ]
+    }
+  ],
+  '/zh/awesome/': [
+    {
+      children: ['/zh/awesome/']
     }
   ]
 }

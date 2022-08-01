@@ -4,11 +4,11 @@ heroImage: /images/strip-show.gif
 actionText: 快速上手 →
 actionLink: /zh/`guide/
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue驱动
-    details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: MIT Licensed | Copyright © 2018-present Evan You
+  - title: 15 万字面试资料
+    details: 内容涵盖计算机通识，前端等知识。完善你的知识体系，让你的面试如虎添翼！
+  - title: React 原理解析
+    details: 打造全网最全最新 React 原理解析，让你成为团队中的 React 高手！
+  - title: 文章
+    details: 针对前端的知识难点进行细致入微的讲解，让你的进阶之路不再崎岖！
+footer: MIT Licensed | Copyright © 2022-present ChenLiCheng
 ---

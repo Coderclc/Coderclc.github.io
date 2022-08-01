@@ -20,7 +20,7 @@ export const navbarEn: NavbarConfig = [
       },
       {
         text: 'Back End',
-        children: ['/backend/node.md', '/backend/script.md']
+        children: ['/backend/node.md', '/backend/script.md', '/backend/mysql.md']
       },
       {
         text: 'Algorithm',
@@ -48,5 +48,9 @@ export const navbarEn: NavbarConfig = [
       '/articles/node-crawl-vmgirls-photo.md',
       '/articles/webpack-frontend-automated-imports.md'
     ]
+  },
+  {
+    text: 'Awesome',
+    link: '/awesome/'
   }
 ]

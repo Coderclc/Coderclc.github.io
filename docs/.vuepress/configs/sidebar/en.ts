@@ -18,7 +18,7 @@ export const sidebarEn: SidebarConfig = {
     },
     {
       text: 'Back End',
-      children: ['/backend/node.md', '/backend/script.md']
+      children: ['/backend/node.md', '/backend/script.md', '/backend/mysql.md']
     },
     {
       text: 'Algorithm',
@@ -45,6 +45,11 @@ export const sidebarEn: SidebarConfig = {
         '/articles/node-crawl-vmgirls-photo.md',
         '/articles/webpack-frontend-automated-imports.md'
       ]
+    }
+  ],
+  '/awesome/': [
+    {
+      children: ['/awesome/']
     }
   ]
 }
