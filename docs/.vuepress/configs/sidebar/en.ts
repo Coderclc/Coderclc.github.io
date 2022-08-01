@@ -12,18 +12,29 @@ export const sidebarEn: SidebarConfig = {
         '/frontend/javascript.md',
         '/frontend/typescript.md',
         '/frontend/webpack.md',
+        '/frontend/vue2.md',
+        '/frontend/vue3.md',
+        '/frontend/vue-cli2.md',
+        '/frontend/vue-router.md',
+        '/frontend/vuex.md',
         '/frontend/workflow.md',
         '/frontend/vuepress.md'
       ]
     },
     {
       text: 'Back End',
-      children: ['/backend/node.md', '/backend/script.md', '/backend/mysql.md']
+      children: [
+        '/backend/node.md',
+        '/backend/script.md',
+        '/backend/mysql.md',
+        '/backend/python.md'
+      ]
     },
     {
       text: 'Algorithm',
       children: [
         '/algorithm/base-element.md',
+        '/algorithm/data-structure.md',
         '/algorithm/sort.md',
         '/algorithm/dynamic-programming.md'
       ]
@@ -43,7 +54,8 @@ export const sidebarEn: SidebarConfig = {
         '/articles/ts-generics.md',
         '/articles/ts-interfaces.md',
         '/articles/node-crawl-vmgirls-photo.md',
-        '/articles/webpack-frontend-automated-imports.md'
+        '/articles/webpack-frontend-automated-imports.md',
+        '/articles/github-pr.md'
       ]
     }
   ],

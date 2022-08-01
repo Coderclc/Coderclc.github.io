@@ -479,3 +479,44 @@ JavaScript 代码规范，自带 linter & 代码自动修正
 ## [Eslint Rule](https://cloud.tencent.com/developer/chapter/12618)
 
 Eslint 规则
+
+## [Navicat](https://navicat.com.cn/)
+
+提升你的工作表现。构建、管理和维护数据库的新方法。
+
+## [Moment.js](http://momentjs.cn/)
+
+JavaScript 日期处理类库
+
+## [Day.js](https://dayjs.fenxianglu.cn/)
+
+Day.js 是一个极简的 JavaScript 库，可以为现代浏览器解析、验证、操作和显示日期和时间。
+
+## [Crypto](https://github.com/brix/crypto-js)
+
+加密标准的 JavaScript 库。
+
+## [Xshell](https://www.xshell.com/zh/xshell/)
+
+业界最强大的 SSH 客户机
+
+## [Winscp](https://winscp.net/eng/index.php)
+
+免费 Award-Winning 文件管理器
+
+## [Ubuntu](https://cn.ubuntu.com/)
+
+测试，打包以及发布您的物联网图形应用
+
+## [MQTT X](https://mqttx.app/zh)
+
+优雅的跨平台 MQTT 5.0 桌面客户端工具
+
+## [Redis] (https://redis.io/)
+
+开源内存数据存储，被数百万开发者用作数据库、缓存、流引擎和消息代理。
+
+## [IoRedis] (https://www.npmjs.com/package/ioredis)
+
+Node.js 是一款功能强大、注重性能的 Redis 客户端。
+

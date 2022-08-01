@@ -12,18 +12,29 @@ export const sidebarZh: SidebarConfig = {
         '/zh/frontend/javascript.md',
         '/zh/frontend/typescript.md',
         '/zh/frontend/webpack.md',
+        '/zh/frontend/vue2.md',
+        '/zh/frontend/vue3.md',
+        '/zh/frontend/vue-cli2.md',
+        '/zh/frontend/vue-router.md',
+        '/zh/frontend/vuex.md',
         '/zh/frontend/workflow.md',
         '/zh/frontend/vuepress.md'
       ]
     },
     {
       text: '后端',
-      children: ['/zh/backend/node.md', '/zh/backend/script.md', '/zh/backend/mysql.md']
+      children: [
+        '/zh/backend/node.md',
+        '/zh/backend/script.md',
+        '/zh/backend/mysql.md',
+        '/zh/backend/python.md'
+      ]
     },
     {
       text: '算法',
       children: [
         '/zh/algorithm/base-element.md',
+        '/zh/algorithm/data-structure.md',
         '/zh/algorithm/sort.md',
         '/zh/algorithm/dynamic-programming.md'
       ]
@@ -43,7 +54,8 @@ export const sidebarZh: SidebarConfig = {
         '/zh/articles/ts-generics.md',
         '/zh/articles/ts-interfaces.md',
         '/zh/articles/node-crawl-vmgirls-photo.md',
-        '/zh/articles/webpack-frontend-automated-imports.md'
+        '/zh/articles/webpack-frontend-automated-imports.md',
+        '/zh/articles/github-pr.md'
       ]
     }
   ],

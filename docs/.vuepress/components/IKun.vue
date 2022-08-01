@@ -48,7 +48,7 @@
     import('../utils/charVideo.ts').then(async module => {
       const CharVideo = module.default
       const blob = await getBlob()
-      
+
       new CharVideo({
         canvasElement: unref(canvasRef)
       }).playFile(blob)
