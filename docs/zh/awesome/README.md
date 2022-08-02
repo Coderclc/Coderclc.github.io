@@ -512,11 +512,34 @@ Day.js 是一个极简的 JavaScript 库，可以为现代浏览器解析、验�
 
 优雅的跨平台 MQTT 5.0 桌面客户端工具
 
-## [Redis] (https://redis.io/)
+## [Redis](https://redis.io/)
 
 开源内存数据存储，被数百万开发者用作数据库、缓存、流引擎和消息代理。
 
-## [IoRedis] (https://www.npmjs.com/package/ioredis)
+## [IoRedis](https://www.npmjs.com/package/ioredis)
 
 Node.js 是一款功能强大、注重性能的 Redis 客户端。
 
+## [Dotenv](https://www.npmjs.com/package/dotenv)
+
+Dotenv 是一个零依赖模块，它将环境变量从 .env 文件加载到 process.env 中。 将配置与代码分开存储在环境中是基于十二要素应用程序方法。
+
+## [Inquirer](https://www.npmjs.com/package/inquirer)
+
+常用交互式命令行用户界面的集合。
+
+## [Http-server](https://www.npmjs.com/package/http-server)
+
+http-server 是一个简单的、零配置的命令行静态 HTTP 服务器。 它对于生产使用来说足够强大，但它足够简单和可破解，可以用于测试、本地开发和学习。
+
+## [Nvm](https://github.com/nvm-sh/nvm)
+
+Node Version Manager
+
+## [Speed-Measure-Webpack-Plugin](https://www.npmjs.com/package/speed-measure-webpack-plugin)
+
+测量各个插件和 loader 所花费的时间
+
+## [Chokidar](https://www.npmjs.com/package/chokidar)
+
+Node.js 提供 fs.watch 和 fs.watchFile 用于处理文件监控

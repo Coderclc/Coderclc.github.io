@@ -101,7 +101,8 @@ export default defineUserConfig({
 
   // markdown
   markdown: {
-    linkify: true
+    linkify: true,
+    code:{lineNumbers:false}
   },
   extendsMarkdown(md) {
     md.use(taskLists).use(footnote)

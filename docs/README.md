@@ -1,14 +1,20 @@
 ---
 home: true
-heroImage: /images/strip-show.gif
-actionText: 快速上手 →
-actionLink: /zh/`guide/
+heroImage: /images/hero.gif
+heroImageDark: /images/hero-dark.gif
+actions:
+   - text: Start review
+     link: /en/frontend/html.html
+     type: primary
+   - text: Awesome
+     link: /en/Awesome/
+     type: secondary
 features:
-  - title: 15 万字面试资料
-    details: 内容涵盖计算机通识，前端等知识。完善你的知识体系，让你的面试如虎添翼！
-  - title: React 原理解析
-    details: 打造全网最全最新 React 原理解析，让你成为团队中的 React 高手！
-  - title: 文章
-    details: 针对前端的知识难点进行细致入微的讲解，让你的进阶之路不再崎岖！
+   - title: Documentation
+     details: The content covers front-end, back-end, operation and maintenance, testing, network and other knowledge. Complete your body of knowledge!
+   - title: Article
+     details: Provide meticulous explanations for the knowledge and difficulties of the full stack, so that your advanced road is no longer bumpy!
+   - title: Awesome
+     details: A curated list of great content related to the full stack
 footer: MIT Licensed | Copyright © 2022-present ChenLiCheng
 ---

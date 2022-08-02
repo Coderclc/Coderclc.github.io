@@ -14,11 +14,7 @@ export const navbarEn: NavbarConfig = [
           '/frontend/javascript.md',
           '/frontend/typescript.md',
           '/frontend/webpack.md',
-          '/frontend/vue2.md',
-          '/frontend/vue3.md',
-          '/frontend/vue-cli2.md',
-          '/frontend/vue-router.md',
-          '/frontend/vuex.md',
+          '/frontend/vue.md',
           '/frontend/workflow.md',
           '/frontend/vuepress.md'
         ]

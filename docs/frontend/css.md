@@ -14,6 +14,12 @@
  <BackgroundClip />
 </ClientOnly>
 
+### IKun
+
+<ClientOnly>
+ <IKun />
+</ClientOnly>
+
 ## Review
 
 - selector + declaration block
@@ -166,6 +172,6 @@
 
 - `scroll-snap-type` defines the critical point of scroll container, automatic callback
 
-- `color-scheme` adapted to mac black mode
+- `color-scheme` adapts to mac black mode
 
 - div container `aspect-ratio: 1/1;` aspect ratio is one to one
