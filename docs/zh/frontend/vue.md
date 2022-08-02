@@ -150,7 +150,7 @@
 60. Hooks 函数增加代码的复用性
 
     - Vue2.x 使用 mixins 来共享组件逻辑,缺陷在于 mixins 也使由 Options 组成的,多个 mixins 会存在命名冲突的问题,
-    - 3.x 可以通过 hook 函数,将一部分独立的逻辑抽取出去,并且还能做到是响应式的![script](C:\Users\Coderclc\Documents\MarkDown\images\script.webp)
+    - 3.x 可以通过 hook 函数,将一部分独立的逻辑抽取出去,并且还能做到是响应式的!
 
 61. 拥抱 ts
 

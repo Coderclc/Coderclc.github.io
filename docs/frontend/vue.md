@@ -150,7 +150,7 @@ The watch monitor has a getter and a setter to trigger the watch, but triggering
 60. Hooks function to increase code reusability
 
 - Vue2.x uses mixins to share component logic. The defect is that mixins are also composed of Options. Multiple mixins will have naming conflicts.
-- 3.x can extract part of the independent logic through the hook function, and it can also be responsive! [script](C:\Users\Coderclc\Documents\MarkDown\images\script.webp)
+- 3.x can extract part of the independent logic through the hook function, and it can also be responsive!
 
 61. Hugs ts
 
