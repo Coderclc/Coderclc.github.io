@@ -54,7 +54,8 @@ export const navbarEn: NavbarConfig = [
       '/articles/ts-interfaces.md',
       '/articles/node-crawl-vmgirls-photo.md',
       '/articles/webpack-frontend-automated-imports.md',
-      '/articles/github-pr.md'
+      '/articles/github-pr.md',
+      '/articles/deploy-v2ray.md'
     ]
   },
   {
