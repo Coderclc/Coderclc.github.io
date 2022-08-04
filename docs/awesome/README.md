@@ -102,7 +102,7 @@ JavaScript toolbox for animators.
 
 vivus, bring your SVGs to life
 
- ## [GSAP](https://github.com/greensock/GSAP)
+## [GSAP](https://github.com/greensock/GSAP)
 
 GSAP (GreenSock Animation Platform) Professional-grade animation for the modern web
 
@@ -543,3 +543,7 @@ Measure the time spent by individual plugins and loaders
 ## [Chokidar](https://www.npmjs.com/package/chokidar)
 
 Node.js provides fs.watch and fs.watchFile for handling file monitoring
+
+## [Docsearch](https://docsearch.algolia.com/)
+
+Provides search functionality for your documentation site.

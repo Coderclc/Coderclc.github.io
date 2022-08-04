@@ -3,11 +3,11 @@ home: true
 heroImage: /images/hero.gif
 heroImageDark: /images/hero-dark.gif
 actions:
-   - text: Start review
-     link: /en/frontend/html.html
+   - text: start review
+     link: /frontend/html.html
      type: primary
    - text: Awesome
-     link: /en/Awesome/
+     link: /Awesome/
      type: secondary
 features:
    - title: Documentation

@@ -543,3 +543,7 @@ Node Version Manager
 ## [Chokidar](https://www.npmjs.com/package/chokidar)
 
 Node.js 提供 fs.watch 和 fs.watchFile 用于处理文件监控
+
+## [Docsearch](https://docsearch.algolia.com/)
+
+为你的文档网站提供搜索功能。

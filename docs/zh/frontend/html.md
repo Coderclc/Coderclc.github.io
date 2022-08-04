@@ -21,4 +21,4 @@
 
 - 当打开的 url 协议名和原本协议名向同时,协议名可省略
 
-- browser script可添加type=module支持esmodule
+- browser script 可添加 type=module 支持 esmodule
