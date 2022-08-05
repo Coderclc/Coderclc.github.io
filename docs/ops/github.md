@@ -47,7 +47,7 @@ with:
 
 `restore-keys` caches subsequent steps and uses if to determine whether dependencies are installed
 
-### [Ssh Deploy](https://github.com/easingthemes/ssh-deploy)
+### [SSH Deploy](https://github.com/easingthemes/ssh-deploy)
 
 ssh link remote server automatic deployment
 

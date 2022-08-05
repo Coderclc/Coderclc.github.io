@@ -47,7 +47,7 @@ with:
 
 `restore-keys` 缓存后续步骤用 if 判断依赖是否安装
 
-### [Ssh Deploy](https://github.com/easingthemes/ssh-deploy)
+### [SSH Deploy](https://github.com/easingthemes/ssh-deploy)
 
 ssh 链接远程服务器自动部署
 
