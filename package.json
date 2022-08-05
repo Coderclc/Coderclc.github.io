@@ -32,7 +32,6 @@
     "markdown-it-task-lists": "^2.1.1",
     "rollup-plugin-copy": "^3.4.0",
     "serve": "^14.0.1",
-    "vconsole": "^3.14.6",
     "vue": "^3.2.37",
     "vuepress": "^2.0.0-beta.49"
   },
