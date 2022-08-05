@@ -47,6 +47,18 @@ with:
 
 `restore-keys` 缓存后续步骤用 if 判断依赖是否安装
 
+### [Ssh Deploy](https://github.com/easingthemes/ssh-deploy)
+
+ssh 链接远程服务器自动部署
+
+1. ssh 创建时采用 PEM 格式 不然会报错`Load key “/home/runner/.ssh/deploy_key”: invalid format`
+
+2. 将公钥写入`.ssh/authorized_keys `中,`vim ~/.ssh/authorized_keys `,且添加到 github SSH keys
+
+3. 私钥作为 `SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}` 在工作流中上传
+
+4. 采用 github Secrets actions 环境添加敏感数据
+
 ## [Gitpod](https://www.gitpod.io/)
 
 自动化和现成代码开发环境
