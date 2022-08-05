@@ -102,7 +102,7 @@ export default defineUserConfig({
   // markdown
   markdown: {
     linkify: true,
-    code:{lineNumbers:false}
+    code: { lineNumbers: false }
   },
   extendsMarkdown(md) {
     md.use(taskLists).use(footnote)
@@ -112,8 +112,8 @@ export default defineUserConfig({
   plugins: [
     // search
     docsearchPlugin({
-      appId: 'MHW4L411IV',
-      apiKey: '6c323324ba42c2aa22ba3ee040f6ecad',
+      appId: 'BXVCMB3WP4',
+      apiKey: '1f1ea2c1822461715676a7ee0955d200',
       indexName: 'chenlicheng',
       searchParameters: {
         facetFilters: ['tags:v2']

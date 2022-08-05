@@ -55,7 +55,8 @@ export const navbarZh: NavbarConfig = [
       '/zh/articles/node-crawl-vmgirls-photo.md',
       '/zh/articles/webpack-frontend-automated-imports.md',
       '/zh/articles/github-pr.md',
-      '/zh/articles/deploy-v2ray.md'
+      '/zh/articles/deploy-v2ray.md',
+      '/zh/articles/vuepress-search.md'
     ]
   },
   {

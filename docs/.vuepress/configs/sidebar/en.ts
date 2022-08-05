@@ -52,7 +52,8 @@ export const sidebarEn: SidebarConfig = {
         '/articles/node-crawl-vmgirls-photo.md',
         '/articles/webpack-frontend-automated-imports.md',
         '/articles/github-pr.md',
-        '/articles/deploy-v2ray.md'
+        '/articles/deploy-v2ray.md',
+        '/articles/vuepress-search.md'
       ]
     }
   ],
