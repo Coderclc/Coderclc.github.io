@@ -4,6 +4,10 @@
 
 [Vultr](https://www.vultr.com/)
 
+[Cloudcone](https://cloudcone.com/vps/)
+
+[Vps.Net](https://www.vps.net/)
+
 ## Deploy VPS
 
 ping Ip `ping ip`
@@ -110,3 +114,7 @@ Direct download `v2rayN-Core.zip` contains `v2ray-core` and `Xray-core`
 ###IOS
 
 Shadowrocket
+
+buy a domain name
+
+[Namecheap](https://www.namecheap.com/)

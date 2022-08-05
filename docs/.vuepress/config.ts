@@ -112,9 +112,9 @@ export default defineUserConfig({
   plugins: [
     // search
     docsearchPlugin({
-      appId: '34YFD9IUQ2',
-      apiKey: '9a9058b8655746634e01071411c366b8',
-      indexName: 'vuepress',
+      appId: 'MHW4L411IV',
+      apiKey: '6c323324ba42c2aa22ba3ee040f6ecad',
+      indexName: 'chenlicheng',
       searchParameters: {
         facetFilters: ['tags:v2']
       },

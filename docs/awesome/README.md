@@ -547,3 +547,7 @@ Node.js provides fs.watch and fs.watchFile for handling file monitoring
 ## [Docsearch](https://docsearch.algolia.com/)
 
 Provides search functionality for your documentation site.
+
+## [Caddy](https://caddyserver.com/)
+
+Caddy 2 is a powerful, enterprise-ready open source web server with automatic HTTPS written in Go

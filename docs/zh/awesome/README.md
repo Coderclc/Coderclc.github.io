@@ -547,3 +547,7 @@ Node.js 提供 fs.watch 和 fs.watchFile 用于处理文件监控
 ## [Docsearch](https://docsearch.algolia.com/)
 
 为你的文档网站提供搜索功能。
+
+## [Caddy](https://caddyserver.com/)
+
+Caddy 2 是一款功能强大、企业就绪的开源 Web 服务器，具有用 Go 编写的自动 HTTPS

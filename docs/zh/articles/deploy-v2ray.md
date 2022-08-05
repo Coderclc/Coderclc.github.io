@@ -4,6 +4,10 @@
 
 [Vultr](https://www.vultr.com/)
 
+[Cloudcone](https://cloudcone.com/vps/)
+
+[Vps.Net](https://www.vps.net/)
+
 ## 部署 VPS
 
 ping Ip `ping ip`
@@ -110,3 +114,7 @@ CentOS 系统先安装 NTP：`yum install ntp ntpdate -y`
 ### IOS
 
 Shadowrocket
+
+购买域名
+
+[Namecheap](https://www.namecheap.com/)
