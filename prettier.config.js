@@ -1,5 +1,5 @@
 module.exports = {
-  printWidth: 10, // 打印宽度
+  printWidth: 100, // 打印宽度
   tabWidth: 2, // tab 宽度
   useTabs: false, // 使用tab
   semi: false, // 分号
