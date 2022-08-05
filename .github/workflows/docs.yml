@@ -14,7 +14,10 @@ jobs:
     env:
       DOCS_GA_ID: G-RZVSTGE8YH
       NODE_VERSION: '16'
-      cache-name: docs
+      SERVER_PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_KEY }} # 服务器私钥
+      SERVER_HOST: ${{ secrets.SERVER_HOST }} # 服务器IP地址
+      USER_NAME: ${{ secrets.USER_NAME }} # 服务器用户名
+      cache-name: note
 
     steps:
       - uses: pnpm/action-setup@v2.2.2
@@ -70,9 +73,9 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
+          SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
           ARGS: '-avz --delete'
           SOURCE: 'docs/.vuepress/dist/'
-          host: ${{ secrets.SERVER_HOST }}
-          user: ${{ secrets.USER_NAME }}
-          pass: ${{ secrets.SERVER_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ env.SERVER_HOST }}
+          REMOTE_USER: ${{ env.USER_NAME }}
           TARGET: /usr/share/caddy/dist # 服务器目标路径
