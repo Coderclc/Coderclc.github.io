@@ -77,7 +77,7 @@ jobs:
         env:
             SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
             ARGS: '-avz --delete'
-            SOURCE: 'docs/.vuepress/dist'
+            SOURCE: 'docs/.vuepress/dist/'
             REMOTE_HOST: ${{ env.SERVER_HOST }}
             REMOTE_USER: ${{ env.USER_NAME }}
             TARGET: /usr/share/caddy/dist # 服务器目标路径
