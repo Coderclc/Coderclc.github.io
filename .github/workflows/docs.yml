@@ -71,3 +71,13 @@ jobs:
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy
+        uses: easingthemes/ssh-deploy@v2.0.7
+        env:
+            SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
+            ARGS: '-avz --delete'
+            SOURCE: 'docs/.vuepress/dist/'
+            REMOTE_HOST: ${{ env.SERVER_HOST }}
+            REMOTE_USER: ${{ env.USER_NAME }}
+            TARGET: /home/note # 服务器目标路径
