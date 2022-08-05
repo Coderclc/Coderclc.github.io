@@ -14,7 +14,6 @@ specifiers:
   markdown-it-task-lists: ^2.1.1
   rollup-plugin-copy: ^3.4.0
   serve: ^14.0.1
-  vconsole: ^3.14.6
   vue: ^3.2.37
   vuepress: ^2.0.0-beta.49
 
@@ -32,7 +31,6 @@ dependencies:
   markdown-it-task-lists: 2.1.1
   rollup-plugin-copy: 3.4.0
   serve: 14.0.1
-  vconsole: 3.14.6
   vue: 3.2.37
   vuepress: 2.0.0-beta.49_d4aca9a3a26f3572a0cf649be414467d
 
@@ -3937,11 +3935,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /copy-text-to-clipboard/3.0.1:
-    resolution: {integrity: sha512-rvVsHrpFcL4F2P8ihsoLdFHmd404+CMg71S756oRSeQgqk51U3kicGdnvfkrxva0xXH92SjGS62B0XIJsbh+9Q==}
-    engines: {node: '>=12'}
-    dev: false
-
   /copy-webpack-plugin/5.1.2_webpack@4.46.0:
     resolution: {integrity: sha512-Uh7crJAco3AjBvgAy9Z75CjK8IG+gxaErro71THQ+vv/bl4HaQcpkexAY8KVW/T6D2W2IRr+couF/knIRkZMIQ==}
     engines: {node: '>= 6.9.0'}
@@ -7410,10 +7403,6 @@ packages:
       thunky: 1.1.0
     dev: false
 
-  /mutation-observer/1.0.3:
-    resolution: {integrity: sha512-M/O/4rF2h776hV7qGMZUH3utZLO/jK7p8rnNgGkjKUw8zCGjRQPxB8z6+5l8+VjRUQ3dNYu4vjqXYLr+U8ZVNA==}
-    dev: false
-
   /mute-stream/0.0.8:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
     dev: false
@@ -10022,15 +10011,6 @@ packages:
   /vary/1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
-    dev: false
-
-  /vconsole/3.14.6:
-    resolution: {integrity: sha512-8Ffk2SfNe6EzKqZ0aNnNjpAVBVT7zgJo81lYEJdKySYLVYBeSawdSkWi9fSjDg3WsQhgS1vNPmRqJDTuwdVbnQ==}
-    dependencies:
-      '@babel/runtime': 7.18.9
-      copy-text-to-clipboard: 3.0.1
-      core-js: 3.24.0
-      mutation-observer: 1.0.3
     dev: false
 
   /vendors/1.0.4:
