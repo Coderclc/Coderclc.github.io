@@ -115,6 +115,36 @@ Direct download `v2rayN-Core.zip` contains `v2ray-core` and `Xray-core`
 
 Shadowrocket
 
-buy a domain name
+## [ProxySU](https://github.com/proxysu/ProxySU/tree/v2.2.2)
+
+Currently the most popular v2ray protocol `WebSocket+TLS+Web`
+
+**Buy a Domain**
 
 [Namecheap](https://www.namecheap.com/)
+
+**Caddy forwarding domain name**
+
+Caddyfile configuration
+
+````
+domain {
+    root * /usr/share/caddy
+    file_server
+    tls {
+   
+    }
+    @v2ray_websocket {
+        path /ray
+        header Connection *Upgrade*
+        header Upgrade websocket
+    }
+    reverse_proxy @v2ray_websocket localhost:10000
+    ##sites##
+}
+
+domain {
+    root * /usr/share/caddy/dist
+    file_server
+}
+````

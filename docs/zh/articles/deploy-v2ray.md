@@ -115,6 +115,36 @@ CentOS 系统先安装 NTP：`yum install ntp ntpdate -y`
 
 Shadowrocket
 
-购买域名
+## [ProxySU](https://github.com/proxysu/ProxySU/tree/v2.2.2)
+
+目前比较热门的 v2ray 协议 `WebSocket+TLS+Web`
+
+**购买域名**
 
 [Namecheap](https://www.namecheap.com/)
+
+**Caddy 转发域名**
+
+Caddyfile 配置
+
+```
+domain {
+    root * /usr/share/caddy
+    file_server
+    tls {
+   
+    }
+    @v2ray_websocket {
+        path /ray
+        header Connection *Upgrade*
+        header Upgrade websocket
+    }
+    reverse_proxy @v2ray_websocket localhost:10000
+    ##sites##
+}
+
+domain {
+    root * /usr/share/caddy/dist
+    file_server
+}
+```
