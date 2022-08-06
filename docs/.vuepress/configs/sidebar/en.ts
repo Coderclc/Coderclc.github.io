@@ -53,7 +53,8 @@ export const sidebarEn: SidebarConfig = {
         '/articles/webpack-frontend-automated-imports.md',
         '/articles/github-pr.md',
         '/articles/deploy-v2ray.md',
-        '/articles/vuepress-search.md'
+        '/articles/vuepress-search.md',
+        '/articles/el-collapse-transition'
       ]
     }
   ],
