@@ -54,7 +54,8 @@ export const sidebarEn: SidebarConfig = {
         '/articles/github-pr.md',
         '/articles/deploy-v2ray.md',
         '/articles/vuepress-search.md',
-        '/articles/el-collapse-transition'
+        '/articles/el-collapse-transition.md',
+        '/articles/mac-shell.md'
       ]
     }
   ],

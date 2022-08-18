@@ -57,7 +57,8 @@ export const navbarZh: NavbarConfig = [
       '/zh/articles/github-pr.md',
       '/zh/articles/deploy-v2ray.md',
       '/zh/articles/vuepress-search.md',
-      '/zh/articles/el-collapse-transition',
+      '/zh/articles/el-collapse-transition.md',
+      '/zh/articles/mac-shell.md'
 
     ]
   },
