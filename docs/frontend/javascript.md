@@ -767,8 +767,6 @@ this.item = Object.freeze(Object.assign({}, this.item)) Freeze the value object 
 
 When you pass a normal JavaScript object to the data option of a Vue instance, Vue will iterate over all the properties of this object and use `Object.defineProperty` to convert all these properties to `getter/setter`, which allow Vue to track Dependencies, notify changes when properties are accessed and modified. After using `Object.freeze`, you can not only reduce the overhead of `observer`, but also reduce a lot of memory overhead. Related [issue](https://github.com/vuejs/vue/issues/4384).
 
-- In the global context, var variables and function functions under the web will be added to the window, const, let will not be added, nodejs var will not be added to the global, and the function context, var, let, and const will not be added to the global, but the two do not Writing keywords will be added to the global, global variables and whether they are added to the global object do not conflict
-
 - count++ returns NAN if count is undefined
 
 - ex is a relative unit in css, relative to a unit that changes with font size and font style
@@ -1095,14 +1093,6 @@ Prototype chain, constructor, composition, prototype, parasitic, parasitic compo
 - instanceof
 - Object.prototype.toString.call()
 
-- Talk about the rules of style priority
-
-- !important
-- Import method, inline is greater than embedding and external chain embedding and external chain look at the order of introduction, the latter overrides the former
-- selector's priority id selector > (class selector | pseudo-class selector | attribute selector) > (descendant selector | pseudo-element selector) > (child selector | adjacent selector) > wildcard selector
-- inherited styles
-- Browser default style
-
 - js implements the asynchronous way. All asynchronous tasks are executed sequentially from the task queue after the execution of the synchronous task is completed.
 - Callback functions such as AJAX callbacks are simple and easy to implement, not conducive to reading and maintenance, highly coupled, chaotic structure, and difficult to track the process
 - event listener
@@ -1125,7 +1115,7 @@ Prototype chain, constructor, composition, prototype, parasitic, parasitic compo
 - filter +indexof index is the same as the first
 - Difference between null and undefined
 - undefined The variable has no assignment, the function has no return value, the property of the object does not exist, and the formal parameter and no actual parameter are undefiend,
-- null is defined and assigned to nullo, an artificially set empty object, and the released object is directly assigned to null
+- null is defined and assigned to null, an artificially set empty object, and the released object is directly assigned to null
 - float
 - Make elements out of the document flow to achieve image text wrapping effect
 - Floating block-level elements can be arranged on the same line
@@ -1362,7 +1352,7 @@ Prototype chain, constructor, composition, prototype, parasitic, parasitic compo
 - Why does the client wait for two **2MSL** in the TIME-WAIT stage, in order to confirm that the server receives the ACK packet of the fourth wave, because when the server waves for the third time, if it does not receive within 1MSL The ACK confirmation message sent by the client will send a FIN message to the client again. So if the FIN packet is received again at the client 2MSL, it proves that the server has not received the ACK packet of the fourth wave, then the client It will be sent again and the timer will be reset. Otherwise, the server receives an ACK packet, and the client enters the CLOSE state, which is later than the server. So wave at least four times
 - Component communication method
 
-- Parent-child communication props emit proview injectg
+- Parent-child communication props emit proview inject
 - Other communication EventBus, vuex
 
 - Talking about the box model, the size of a box is determined by margin padding border content, the standard box width/height is set to content, and the weird box is set to padding+border+content
@@ -1672,3 +1662,24 @@ addTask(1000, '1')
 addTask(1000, '1')
 addTask(1000, '1')
 ```
+
+- Front-end testing
+
+  - ESLINT test, type check, format check through ESLint,
+  - Tool class function test jest
+  - Component testing Reuse component testing testing-library Render vue in the sandbox environment, and judge according to the rendering results
+  - Page testing cypress simulates user clicks and judges page elements
+  - Mock data test, mock out all request results for easy error correction
+
+- ["Advanced Front-end" high-performance rendering of 100,000 pieces of data (virtual list)](https://juejin.cn/post/6844903982742110216#heading-0)
+
+  - Time slicing: Leave it to the front-end for paging, use the timer to add it to the next event loop in batches, cut and render, and avoid frame loss with setTimeout for a long time. requestAnimationFrame doesn't. Use DocumentFragment to reduce reflow. Only works with simple dom
+  - Virtual list
+    - Recalculate Style: Style calculation, the browser calculates which elements should apply which rules according to the CSS selector, and determines the specific style of each element. time consuming
+    - Layout: After knowing which rules are applied to the element, the browser starts to calculate the size of the space it will occupy and its position on the screen. time consuming
+    - Blank list placeholder, scrolling the list for virtual loading slices
+    - Dynamic height, which is rendered with the estimated height first, and then updated to the real height through updated. IntersectionObserver can monitor whether the target element appears in the visible area, and perform the update of the visible area data in the monitored callback event. Reduce scroll performance consumption, ResizeObserver monitors the content height and size changes caused by image loading
+
+- DocumentFragment, the document fragment interface, represents a minimal document object without a parent document. It is used as a lightweight version of Document for storing typeset or unformatted XML fragments. The biggest difference is that because the DocumentFragment is not part of the real DOM tree, its changes will not trigger a (re-render) of the DOM tree, and will not cause performance problems. An empty DocumentFragment can be created using the document.createDocumentFragment method or constructor
+
+- [Image lazy loading](https://juejin.cn/post/7120214953256026125) Save the image path to data-xxx, and assign it to src when the image appears in the visible area

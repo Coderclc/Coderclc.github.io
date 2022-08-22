@@ -765,8 +765,6 @@ xhr.onload=function(){xhr.responseText}
 
   当你把一个普通的 JavaScript 对象传给 Vue 实例的 data 选项，Vue 将遍历此对象所有的属性，并使用 `Object.defineProperty` 把这些属性全部转为 `getter/setter`，它们让 Vue 能进行追踪依赖，在属性被访问和修改时通知变化。 使用了 `Object.freeze` 之后，不仅可以减少 `observer` 的开销，还能减少不少内存开销。相关 [issue](https://github.com/vuejs/vue/issues/4384)。
 
-- 全局上下文,web 下 var 变量,function 函数会添加到 window,const,let 不会添加,nodejs var 不会添加到 global ,函数上下文,var,let ,const 都不会添加到全局,但二者不写关键字都会添加到全局,全局变量和是否添加到全局对象上不冲突
-
 - count++ 如果 count 为 undefined 返回 NAN
 
 - ex 就是 css 中的一个相对单位, 相对的是字体大小和字体样式而改变的一个单位
@@ -1092,14 +1090,6 @@ xhr.onload=function(){xhr.responseText}
   - instanceof
   - Object.prototype.toString.call()
 
-- 说一说样式优先级的规则
-
-  - !important
-  - 引入方式,行内大于嵌入和外链 嵌入和外链看引入顺序,后者覆盖前者
-  - 选择器的优先级 id 选择器>（类选择器 | 伪类选择器 | 属性选择器 ）> （后代选择器 | 伪元素选择器 ）> （子选择器 | 相邻选择器） > 通配符选择器
-  - 继承样式
-  - 浏览器默认样式
-
 - js 实现异步的方式 .所有异步任务都是在同步任务执行结束之后，从任务队列中依次取出执行
   - 回调函数 比如 AJAX 回调 ,简单容易实现,不利于阅读和维护,高度耦合,结构混乱,流程难以追踪
   - 事件监听
@@ -1122,7 +1112,7 @@ xhr.onload=function(){xhr.responseText}
   - filter +indexof index 相同即为第一个
 - null 和 undefined 的区别
   - undefined 变量没有赋值, 函数没有返回值,对象不存在的属性,有形参无实参即为 undefiend,
-  - null 定义了且赋值为 nullo,人为设置的空对象,释放对象 直接赋值为 null
+  - null 定义了且赋值为 null,人为设置的空对象,释放对象 直接赋值为 null
 - 浮动
   - 让元素脱离文档流,实现图片文字环绕效果
   - 浮动块级元素可排列在同一行
@@ -1359,7 +1349,7 @@ xhr.onload=function(){xhr.responseText}
 - 为什么客户端在 TIME-WAIT 阶段要等两**2MSL** , 为的是确认服务器收到第四次挥手的 ACK 包, 因为服务端在第三次挥手时,如果在 1MSL 内没有收到客户端发出的 ACK 确认报文，就会再次向客户端发出 FIN 报文.所以如果在客户端 2MSL 再次接收到 FIN 包,证明了服务端未收到第四次挥手的 ACK 包,那么客户端会再次发送并且定时器重置.否则为服务端接收到了 ACK 包,客户端进入 CLOSE 状态,比服务端晚.所以挥手是最少四次
 - 组件通信方式
 
-  - 父子通信 props emit proview injectg
+  - 父子通信 props emit proview inject
   - 其他通信 EventBus,vuex
 
 - 说一说盒模型 ,决定一个盒子的大小由 margin padding border content,标准盒 width/height 设置的是 content,怪异盒设置的是 padding+border+content
@@ -1539,15 +1529,15 @@ xhr.onload=function(){xhr.responseText}
 
   - 生成 将 AST 转换成字符串形式的低版本代码，同时也能创建 Source Map 映射。
 
-  - await 后的执行代码相当于 promise.then 也在微任务中 ,若无 reslove 则不执行
+- await 后的执行代码相当于 promise.then 也在微任务中 ,若无 reslove 则不执行
 
-  - require('xxx') 查找包过程
+- require('xxx') 查找包过程
 
-    - 首先找到 package.json 同级的 node_modules
-    - 找到'xxx' 包
-    - 找到'xxx'下的 package.json 的 main 字段中的 js 文件
-    - 若没有 package.json 或没有 main 字段 则默认加载'xxx' 包的 index.js 文件
-    - 若没有则查找上一级的 node_modules 直到根目录,最后报错
+  - 首先找到 package.json 同级的 node_modules
+  - 找到'xxx' 包
+  - 找到'xxx'下的 package.json 的 main 字段中的 js 文件
+  - 若没有 package.json 或没有 main 字段 则默认加载'xxx' 包的 index.js 文件
+  - 若没有则查找上一级的 node_modules 直到根目录,最后报错
 
 - 判断链表是否有环
 
@@ -1670,3 +1660,25 @@ xhr.onload=function(){xhr.responseText}
   addTask(1000, '1')
   addTask(1000, '1')
   ```
+
+- 前端测试
+
+  - ESLINT 测试，过 ESLint 进行类型校验，格式校验，
+  - 工具类函数测试 jest
+  - 组件测试 复用组件测试 testing-library 沙盒环境下对 vue 进行渲染，根据渲染结果进行判断
+  - 页面测试 cypress 模拟用户的点击，判断页面元素
+  - mock 数据测试，将所有的请求结果都 mock 出来，方便纠错
+
+- [「前端进阶」高性能渲染十万条数据(虚拟列表)](https://juejin.cn/post/6844903982742110216#heading-0)
+
+  - 时间分片： 交由 前端来进行分页，使用定时器分批量添加到下一次 event loop,切割渲染，避免长时间空白 setTimeout 会有丢帧的情况。requestAnimationFrame 不会。使用 DocumentFragment 减少回流。只适用于简单的 dom
+  - 虚拟列表
+    - Recalculate Style：样式计算，浏览器根据 css 选择器计算哪些元素应该应用哪些规则，确定每个元素具体的样式。耗时长
+    - Layout：布局，知道元素应用哪些规则之后，浏览器开始计算它要占据的空间大小及其在屏幕的位置。耗时长
+    - 空白列表占位，滚动列表进行虚拟加载slice
+    - 动态高度 ，以预估高度先行渲染，再通过updated来更新为真正的高度。IntersectionObserver可以监听目标元素是否出现在可视区域内，在监听的回调事件中执行可视区域数据的更新。减少scroll性能消耗，ResizeObserver监听图片加载导致的内容高度大小变化
+
+- DocumentFragment，文档片段接口，表示一个没有父级文件的最小文档对象。它被作为一个轻量版的 Document 使用，用于存储已排好版的或尚未打理好格式的 XML 片段。最大的区别是因为 DocumentFragment 不是真实 DOM 树的一部分，它的变化不会触发 DOM 树的（重新渲染) ，且不会导致性能等问题。可以使用 document.createDocumentFragment 方法或者构造函数来创建一个空的 DocumentFragment
+
+
+- [图片懒加载](https://juejin.cn/post/7120214953256026125) 将图片路径存到data-xxx，当图片出现在可视区域时，再赋值给src

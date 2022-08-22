@@ -1,23 +1,23 @@
 # Mac Shell
 
-When learning to use MAC shell, install 'pnpm' globally through 'NPM'`
+Install `pnpm` globally via `npm` when learning to use the Mac Shell
 
-Error reported
+error
 
 `The operation was rejected by your operating system`
 
-Check the NPM global installation location. The 'NPM get config prefix' is the system disk under ` / usr / local '
+View the npm global installation location `npm get config prefix` is the system disk under `/usr/local`
 
-A better solution is to modify the NPM global installation script location
+A better solution is to modify the location of the npm global installation script
 
-`npm config set prefix ‘~/.npm/_ global’`
+`npm config set prefix '~/.npm/_global'`
 
-At this time, execute 'NPM install pnpm - G' to install to ` ~ / npm/_ 'global' position, but 'pnpm' is still not found in the shell`
+At this point, executing `npm install pnpm -g` will install it to the `'~/.npm/_global'` location, but still cannot find `pnpm` in the shell
 
-Because it is not added to the shell path environment, there are two types of MAC shells, namely `bash 'and` Zsh'`
+Because it is not added to the shell PATH environment, there are two types of mac shells, `bash` and `zsh`
 
-`The user-defined path script under bash ` is `bash_ Profile` corresponds to `. Zprofile 'under' Zsh '`
+The user-defined PATh script under `bash` is `.bash_profile` corresponding to `.zprofile` under `zsh`
 
-For example, 'echo export path = ~ /' under bash npm/_ global/bin:$PATH > ~/. bash_ Profile ` updating shell with source (` source ~ /. Bash)\_ profile`
+For example, `echo export PATH=~/.npm/_global/bin:$PATH > ~/.bash_profile` under bash is updating the shell with source `source ~/.bash_profile`
 
-Zsh homology
+zsh is the same
