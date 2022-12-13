@@ -1683,3 +1683,20 @@ addTask(1000, '1')
 - DocumentFragment, the document fragment interface, represents a minimal document object without a parent document. It is used as a lightweight version of Document for storing typeset or unformatted XML fragments. The biggest difference is that because the DocumentFragment is not part of the real DOM tree, its changes will not trigger a (re-render) of the DOM tree, and will not cause performance problems. An empty DocumentFragment can be created using the document.createDocumentFragment method or constructor
 
 - [Image lazy loading](https://juejin.cn/post/7120214953256026125) Save the image path to data-xxx, and assign it to src when the image appears in the visible area
+
+- Closure vulnerability Defined by Object.defineProperty Return this arbitrarily, getter gets this,
+   - hasOwnProperty judgment key
+   - Object.setPrototypeOf sets the prototype to empty
+
+- Regular look-ahead (?=) will not consume characters, it is at the cursor position, used to verify string rules
+
+- window.addEventListener 'storage' listens to other tabs to modify storage
+
+- interrupt network transfer request
+   - axios discards the corresponding result instead of canceling the request
+   - fetch new AbortController() associated controller.signal calls abort()
+
+- code units and code points
+   - ucs-2 16 code elements
+   - utf-16 16/32
+   - The length and array subscripts are read in code units

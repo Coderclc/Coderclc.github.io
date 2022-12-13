@@ -1682,3 +1682,20 @@ xhr.onload=function(){xhr.responseText}
 
 
 - [图片懒加载](https://juejin.cn/post/7120214953256026125) 将图片路径存到data-xxx，当图片出现在可视区域时，再赋值给src
+
+- 闭包漏洞 通过Object.defineProperty 定义 任意返回this， getter获取this，
+  - hasOwnProperty 判断 key
+  - Object.setPrototypeOf 将原型置空
+
+- 正则前瞻(?=) 不会消耗字符,为光标位置处,用于校验字符串规则
+
+- window.addEventListener 'storage' 监听别的标签页修改storage
+
+- 中断网络传输请求
+  - axios 丢弃相应结果,而不是取消请求
+  - fetch new AbortController()  关联controller.signal 调用abort()  
+
+- 码元和码点
+  - ucs-2 16 码元
+  - utf-16 16/32 
+  - length和数组下标读取的是码元的
