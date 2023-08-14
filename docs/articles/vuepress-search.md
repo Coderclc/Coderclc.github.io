@@ -89,7 +89,7 @@ Prepare the `config.json` configuration file
   "index_name": "chenlicheng",
   "start_urls": [
     {
-      "url": "https://www.chenlicheng.com/",
+      "url": "https://www.chenlicheng.lol/",
       "selectors_key": "v2",
       "tags": ["v2"]
     }
