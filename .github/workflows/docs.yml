@@ -51,7 +51,7 @@ jobs:
       # 如果缓存没有命中，安装依赖
       - name: Install dependencies
         if: steps.pnpm-cache.outputs.cache-hit != 'true'
-        run: pnpm i
+        run: pnpm i --frozen-lockfile
 
       # 运行构建脚本
       - name: Build VuePress site
@@ -70,12 +70,12 @@ jobs:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@main
-        env:
-          REMOTE_HOST: ${{ env.SERVER_HOST }}
-          REMOTE_USER: ${{ env.USER_NAME }}
-          SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
-          ARGS: '-avz --delete'
-          SOURCE: docs/.vuepress/dist
-          TARGET: /usr/share/caddy # 服务器目标路径
+      # - name: Deploy to Server
+      #   uses: easingthemes/ssh-deploy@main
+      #   env:
+      #     REMOTE_HOST: ${{ env.SERVER_HOST }}
+      #     REMOTE_USER: ${{ env.USER_NAME }}
+      #     SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
+      #     ARGS: '-avz --delete'
+      #     SOURCE: docs/.vuepress/dist
+      #     TARGET: /usr/share/caddy # 服务器目标路径
