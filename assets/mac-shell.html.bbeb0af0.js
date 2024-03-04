@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-043dc85e","path":"/zh/articles/mac-shell.html","title":"Mac Shell","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1660848142000,"contributors":[{"name":"\u9648\u5386\u6F84","email":"chenlicheng@chenlidengdeiMac.local","commits":1}]},"filePathRelative":"zh/articles/mac-shell.md"}');export{e as data};

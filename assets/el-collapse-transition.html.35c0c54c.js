@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-98797d80","path":"/zh/articles/el-collapse-transition.html","title":"El Collapse Transition","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1659799709000,"contributors":[{"name":"coderclc","email":"804748585@qq.com","commits":1}]},"filePathRelative":"zh/articles/el-collapse-transition.md"}');export{t as data};
