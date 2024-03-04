@@ -39,7 +39,7 @@ export const navbarZh: NavbarConfig = [
       },
       {
         text: '运维',
-        children: ['/zh/ops/github.md']
+        children: ['/zh/ops/github.md','/zh/ops/git.md']
       }
     ]
   },

@@ -39,7 +39,7 @@ export const navbarEn: NavbarConfig = [
       },
       {
         text: 'O&M',
-        children: ['/ops/github.md']
+        children: ['/ops/github.md','/ops/git.md']
       }
     ]
   },
