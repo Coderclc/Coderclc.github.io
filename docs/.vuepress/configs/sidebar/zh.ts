@@ -37,7 +37,7 @@ export const sidebarZh: SidebarConfig = {
     },
     {
       text: '运维',
-      children: ['/zh/ops/github.md']
+      children: ['/ops/github.md','/ops/git.md']
     }
   ],
   '/zh/articles': [

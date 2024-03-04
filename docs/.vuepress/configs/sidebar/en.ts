@@ -37,7 +37,7 @@ export const sidebarEn: SidebarConfig = {
     },
     {
       text: 'O&M',
-      children: ['/ops/github.md']
+      children: ['/ops/github.md','/ops/git.md']
     }
   ],
   '/articles/': [
